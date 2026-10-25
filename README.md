@@ -3,4 +3,4 @@ The project is intended to deploy a controlled honeypot on a Raspberry Pi, colle
 
 ## Project Architecture
 
-![Project Architecture](images/Raspberry_Pi_Architecture
+![Project Architecture](images/Raspberry_Pi_Architecture.png)

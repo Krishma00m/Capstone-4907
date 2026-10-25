@@ -1,0 +1,16 @@
+
+services:
+  cowrie:
+    image: cowrie/cowrie:latest
+    container_name: capstone-cowrie
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:2222:2222"
+    volumes:
+      - ./etc:/cowrie/cowrie-git/etc
+      - ./log:/cowrie/cowrie-git/var/log/cowrie
+      - ./lib:/cowrie/cowrie-git/var/lib/cowrie
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
